@@ -6,10 +6,11 @@ import { MdAddShoppingCart } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { toggleLike } from "../../context/wishlistSlice";
+import { addToCart } from "../../context/cartSlice";
 
 const Products = ({ data }) => {
   let wishlist = useSelector((state) => state.wishlist.value);
-  console.log(wishlist);
+  // console.log(wishlist);
   const dispatch = useDispatch();
 
   let card = data?.map((el) => (
@@ -27,7 +28,7 @@ const Products = ({ data }) => {
               <FaRegHeart />
             )}
           </button>
-          <button>
+          <button onClick={() => dispatch(addToCart(el))}>
             <MdAddShoppingCart />
           </button>
           <button>

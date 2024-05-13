@@ -5,7 +5,7 @@ import Products from "../../static/products/Products";
 
 const Wishlist = () => {
   let wishlist = useSelector((state) => state.wishlist.value);
-  console.log(wishlist);
+  // console.log(wishlist);
 
   return (
     <div>
