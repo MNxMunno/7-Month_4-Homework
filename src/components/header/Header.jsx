@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
+import logos from "../../assets/images/logos.svg";
 import { CiSearch } from "react-icons/ci";
 import { IoCartOutline, IoLogInOutline } from "react-icons/io5";
 
@@ -10,7 +11,8 @@ const Header = () => {
       <div className="container">
         <nav>
           <Link to={"/"}>
-            <img src={logo} alt="" />
+            <img className="logo" src={logo} alt="" />
+            <img className="logos" src={logos} alt="" />
           </Link>
           <div className="nav__items">
             <Link to={"/"}>Home</Link>
