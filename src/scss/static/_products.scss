@@ -92,8 +92,19 @@
     .cards {
       .card {
         width: 150px;
-        img {
-          height: 150px;
+        .content {
+          img {
+            height: 150px;
+          }
+          .btns {
+            // display: none;
+            button {
+              padding: 5px;
+              svg {
+                font-size: 20px;
+              }
+            }
+          }
         }
       }
     }
