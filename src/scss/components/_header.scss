@@ -27,6 +27,10 @@ header {
         line-height: 20.11px;
         // text-align: left;
         color: #3d3d3d;
+
+        .btn__nav {
+          display: none;
+        }
       }
     }
     .nav__btns {
@@ -61,7 +65,27 @@ header {
         display: block;
       }
       .nav__items {
-        display: none;
+        position: fixed;
+        background: #fff;
+        padding: 5px 15px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-top: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 20px 20px 0 0;
+        a {
+          p {
+            display: none;
+          }
+          .btn__nav {
+            display: block;
+            font-size: 24px;
+          }
+        }
+        // box-shadow: -3px -3px -5px rgb(202, 202, 202, 0.2);
       }
     }
   }

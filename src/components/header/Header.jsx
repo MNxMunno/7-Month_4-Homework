@@ -2,8 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import logos from "../../assets/images/logos.svg";
-import { CiSearch } from "react-icons/ci";
-import { IoCartOutline, IoLogInOutline } from "react-icons/io5";
+import { CiSearch, CiShop } from "react-icons/ci";
+import { FaRegHeart } from "react-icons/fa";
+
+import { IoCartOutline, IoHomeOutline, IoLogInOutline } from "react-icons/io5";
+import { SiBloglovin } from "react-icons/si";
 
 const Header = () => {
   return (
@@ -15,10 +18,22 @@ const Header = () => {
             <img className="logos" src={logos} alt="" />
           </Link>
           <div className="nav__items">
-            <Link to={"/"}>Home</Link>
-            <Link to={"/cart"}>Shop</Link>
-            <Link to={"/wislhist"}>Wishlist</Link>
-            <Link to={"/blog"}>Blog</Link>
+            <Link to={"/"}>
+              <IoHomeOutline className="btn__nav" />
+              <p>Home</p>
+            </Link>
+            <Link to={"/cart"}>
+              <CiShop className="btn__nav" />
+              <p>Shop</p>
+            </Link>
+            <Link to={"/wislhist"}>
+              <FaRegHeart className="btn__nav" />
+              <p>Wishlist</p>
+            </Link>
+            <Link to={"/blog"}>
+              <SiBloglovin className="btn__nav" />
+              <p>Blog</p>
+            </Link>
           </div>
           <div className="nav__btns">
             <button>
