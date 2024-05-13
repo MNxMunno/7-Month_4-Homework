@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+@import "./components/header";
+@import "./routers/cartPage";
+@import "./routers/wishlist";
+@import "./static/banner";
+@import "./static/products";
