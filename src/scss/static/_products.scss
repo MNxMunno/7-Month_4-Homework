@@ -93,10 +93,13 @@
       .card {
         width: 150px;
         .content {
+          // overflow: auto;
           img {
             height: 150px;
           }
           .btns {
+            bottom: 0;
+            z-index: 1;
             // display: none;
             button {
               padding: 5px;
