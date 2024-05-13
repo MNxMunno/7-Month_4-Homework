@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // flex-wrap: wrap;
     .card {
       .title {
         font-family: sans-serif;
@@ -19,7 +20,7 @@
         padding-bottom: 5px;
       }
       .hero_desc {
-        max-width: 557px;
+        max-width: 507px;
         padding: 5px 0 44px;
         font-family: sans-serif;
         font-size: 14px;
@@ -28,6 +29,7 @@
         text-align: left;
       }
       h1 {
+        max-width: 530px;
         font-family: sans-serif;
         font-size: 70px;
         font-weight: 900;
@@ -43,13 +45,33 @@
         align-items: baseline;
 
         img {
-          max-width: 518px;
           width: 100%;
         }
         .img1 {
-          width: 135px;
+          width: 40%;
         }
       }
+    }
+  }
+  @media only screen and (max-width: 555px) {
+    .cards {
+      padding: 0;
+      .card {
+        h1 {
+          font-size: 32px;
+          line-height: 36px;
+        }
+        .img {
+          .img1 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 512px) {
+    .cards {
+      flex-wrap: wrap;
     }
   }
 }

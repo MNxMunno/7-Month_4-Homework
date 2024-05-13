@@ -4,6 +4,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
   background: #fff;
   box-shadow: 3px 3px 5px rgba(188, 188, 188, 0.2);
   border-bottom: 1px solid rgb(202, 202, 202, 0.2);
@@ -45,6 +46,13 @@ header {
         color: #fff;
         padding: 7px 17px;
         border-radius: 8px;
+      }
+    }
+  }
+  @media only screen and (max-width: 777px) {
+    nav {
+      .nav__items {
+        display: none;
       }
     }
   }

@@ -7,6 +7,8 @@ export const wishlistSlice = createSlice({
   },
   reducers: {
     toggleLike(state, action) {
+      console.log(state.value, "state");
+      console.log(action, "action");
       let index = state.value?.findIndex((el) => el.id === action.payload.id);
       if (index < 0) {
         state.value = [...state.value, action.payload];
