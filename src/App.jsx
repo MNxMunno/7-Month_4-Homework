@@ -18,6 +18,8 @@ const App = () => {
           <Route path="checkout" element={<Checkout />} />
         </Route>
         <Route path="/wislhist" element={<Wishlist />} />
+        <Route path="/checkout" element={<Checkout />} />
+
         <Route path="*" element={<Empty />} />
       </Routes>
     </>

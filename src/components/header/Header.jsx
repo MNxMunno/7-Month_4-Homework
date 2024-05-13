@@ -42,10 +42,10 @@ const Header = () => {
             <button>
               <IoCartOutline />
             </button>
-            <button className="login">
+            <Link to={"checkout"} className="login">
               <IoLogInOutline />
               Login
-            </button>
+            </Link>
           </div>
         </nav>
       </div>
