@@ -1,0 +1,55 @@
+.banner {
+  .cards {
+    padding-top: 68px;
+    padding-left: 40px;
+    padding-right: 80px;
+    background: #f5f5f580;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .card {
+      .title {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #3d3d3d;
+        padding-bottom: 5px;
+      }
+      .hero_desc {
+        max-width: 557px;
+        padding: 5px 0 44px;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+      }
+      h1 {
+        font-family: sans-serif;
+        font-size: 70px;
+        font-weight: 900;
+        line-height: 70px;
+        text-align: left;
+        color: #3d3d3d;
+        span {
+          color: #46a358;
+        }
+      }
+      .img {
+        display: flex;
+        align-items: baseline;
+
+        img {
+          max-width: 518px;
+          width: 100%;
+        }
+        .img1 {
+          width: 135px;
+        }
+      }
+    }
+  }
+}
