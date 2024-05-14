@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 32px;
+    // grid-template-rows: 1fr 1fr;
     .cards {
       display: flex;
 
@@ -75,7 +76,7 @@
       display: flex;
       gap: 12px;
       flex-direction: column;
-      .content {
+      .c__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -130,6 +131,19 @@
         color: #3d3d3d;
         border-bottom: 1px solid #ccc;
         padding-bottom: 10px;
+      }
+    }
+  }
+  @media only screen and (max-width: 814px) {
+    .content {
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr;
+      .cards {
+        .card {
+          .btns {
+            width: auto;
+          }
+        }
       }
     }
   }

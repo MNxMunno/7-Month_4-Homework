@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+header {
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 3px 3px 5px rgba(188, 188, 188, 0.2);
+  border-bottom: 1px solid rgba(202, 202, 202, 0.2);
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: space-between;
+}
+header nav .logos {
+  display: none;
+}
+header nav .nav__items {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+header nav .nav__items a {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.11px;
+  color: #3d3d3d;
+}
+header nav .nav__items a .btn__nav {
+  display: none;
+}
+header nav .nav__btns {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+header nav .nav__btns svg {
+  font-size: 24px;
+}
+header nav .nav__btns .login {
+  display: flex;
+  align-items: center;
+  background: #46a358;
+  gap: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.11px;
+  color: #fff;
+  padding: 7px 17px;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 777px) {
+  header nav .logo {
+    display: none;
+  }
+  header nav .logos {
+    display: block;
+  }
+  header nav .nav__items {
+    position: fixed;
+    background: #fff;
+    padding: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px 20px 0 0;
+  }
+  header nav .nav__items a p {
+    display: none;
+  }
+  header nav .nav__items a .btn__nav {
+    display: block;
+    font-size: 24px;
+  }
+}
+
+.cart {
+  padding-top: 70px;
+}
+.cart .content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+}
+.cart .content .cards {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+.cart .content .cards .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.cart .content .cards .title p {
+  font-family: sans-serif;
+}
+.cart .content .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cart .content .cards .card img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.cart .content .cards .card h5 {
+  width: 120px;
+}
+.cart .content .cards .card .btns {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cart .content .cards .card .btns span {
+  text-align: center;
+}
+.cart .content .cards .card .btn {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  background: #46a358;
+  border-radius: 50%;
+  padding: 5px 10px;
+  color: #fff;
+}
+.cart .content .cards .card .btn:disabled {
+  opacity: 0.6;
+}
+.cart .content .cards .card button svg {
+  font-size: 24px;
+}
+.cart .content .right__cards {
+  border: 1px solid #eee;
+  padding: 5px 10px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+.cart .content .right__cards .c__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cart .content .right__cards .c__content .card h5 {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #3d3d3d;
+}
+.cart .content .right__cards .c__content .card h2 {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: right;
+  color: #46a358;
+}
+.cart .content .right__cards button {
+  background: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  color: #46a358;
+  font-family: sans-serif;
+  transition: 0.2s;
+}
+.cart .content .right__cards button:hover {
+  background: #46a358;
+  color: #fff;
+}
+.cart .content .right__cards .first__btn {
+  background: #46a358;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+.cart .content .right__cards b {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #3d3d3d;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 814px) {
+  .cart .content {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+  .cart .content .cards .card .btns {
+    width: auto;
+  }
+}
+
+.banner .cards {
+  padding-top: 68px;
+  padding-left: 40px;
+  padding-right: 80px;
+  background: rgba(245, 245, 245, 0.5019607843);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner .cards .card .title {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #3d3d3d;
+  padding-bottom: 5px;
+}
+.banner .cards .card .hero_desc {
+  max-width: 507px;
+  padding: 5px 0 44px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.banner .cards .card h1 {
+  max-width: 530px;
+  font-family: sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+  text-align: left;
+  color: #3d3d3d;
+}
+.banner .cards .card h1 span {
+  color: #46a358;
+}
+.banner .cards .card .img {
+  display: flex;
+  align-items: baseline;
+}
+.banner .cards .card .img img {
+  width: 100%;
+}
+.banner .cards .card .img .img1 {
+  width: 40%;
+}
+@media only screen and (max-width: 555px) {
+  .banner .cards {
+    padding: 0;
+  }
+  .banner .cards .card h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .banner .cards .card .img .img1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .banner .cards {
+    flex-wrap: wrap;
+  }
+}
+
+.products {
+  padding: 96px 0;
+}
+.products .cards {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.products .cards .card {
+  width: 250px;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.products .cards .card h2 {
+  padding: 12px 0 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #3d3d3d;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.products .cards .card .content {
+  position: relative;
+  overflow: hidden;
+}
+.products .cards .card .content img {
+  width: calc(33% - 13px);
+  width: 100%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.3s ease;
+}
+.products .cards .card .content .btns {
+  transition: all 0.3s ease;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  bottom: -50%;
+}
+.products .cards .card .content .btns button {
+  background: #f4f4f4;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.products .cards .card .content .btns button svg {
+  font-size: 28px;
+  color: #a2a2a2;
+}
+.products .cards .card:hover {
+  box-shadow: 3px 3px 5px rgba(170, 170, 170, 0.2);
+}
+.products .cards .card:hover .content img {
+  transform: scale(1.1);
+}
+.products .cards .card:hover .content .btns {
+  bottom: 0;
+}
+.products .cards .card p {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  padding-top: 6px;
+  color: #46a358;
+}
+@media only screen and (max-width: 572px) {
+  .products .cards {
+    gap: 5px;
+  }
+}
+@media only screen and (max-width: 545px) {
+  .products .cards .card {
+    width: 150px;
+  }
+  .products .cards .card .content img {
+    height: 150px;
+  }
+  .products .cards .card .content .btns {
+    bottom: 0;
+    z-index: 1;
+  }
+  .products .cards .card .content .btns button {
+    padding: 5px;
+  }
+  .products .cards .card .content .btns button svg {
+    font-size: 20px;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  background: #46a358;
+  gap: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.11px;
+  color: #fff;
+  padding: 7px 17px;
+  border-radius: 8px;
+}/*# sourceMappingURL=main.css.map */

@@ -55,7 +55,7 @@ const Cart = ({ data }) => {
           </div>
           <div className="right__cards">
             <b>Cart Totals</b>
-            <div className="content">
+            <div className=" c__content">
               <div className="card">
                 <h5>Total</h5>
               </div>
