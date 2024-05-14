@@ -140,6 +140,7 @@
       grid-template-rows: 1fr 1fr;
       .cards {
         .card {
+          flex-wrap: wrap;
           .btns {
             width: auto;
           }

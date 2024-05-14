@@ -238,6 +238,9 @@ header nav .nav__btns .login {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
   }
+  .cart .content .cards .card {
+    flex-wrap: wrap;
+  }
   .cart .content .cards .card .btns {
     width: auto;
   }
