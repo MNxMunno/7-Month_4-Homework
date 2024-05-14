@@ -6,6 +6,7 @@ import {
   removeItemFromCart,
 } from "../../context/cartSlice";
 import { MdDeleteForever } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Cart = ({ data }) => {
   const dispatch = useDispatch();
@@ -53,7 +54,19 @@ const Cart = ({ data }) => {
             {cart}
           </div>
           <div className="right__cards">
-            <h2>{totalPrice}</h2>
+            <b>Cart Totals</b>
+            <div className="content">
+              <div className="card">
+                <h5>Total</h5>
+              </div>
+              <div className="card">
+                <h2>$ {totalPrice}</h2>
+              </div>
+            </div>
+            <Link to={"/checkout"} className="first__btn">
+              Proceed To Checkout
+            </Link>
+            <button>Continue Shopping</button>
           </div>
         </div>
       </div>
